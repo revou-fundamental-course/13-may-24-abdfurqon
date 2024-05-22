@@ -1,5 +1,3 @@
-/* ini css */
-
 .section-content{
     background-color: royalblue;
     color: white;
@@ -26,5 +24,36 @@
 }
 
 input{
+    background-color: aliceblue;
+    border: 1px, solid, steelblue;
+    border-radius: 4px;
     width: 100%;
+    padding: 4px;
+    font-family: math;
+}
+
+form>button {
+    padding: 32px;
+    border-radius: 16px;
+    border: 1px, solid, steelblue;
+    background-color: aliceblue;
+}
+
+.button-responsive>button {
+    padding: 32px;
+    border-radius: 16px;
+    border: 1px, solid, steelblue;
+    background-color: aliceblue;
+}
+
+#reset-btn {
+    background-color:slateblue;
+    color: white;
+}
+
+@media only screen and (max-width: 480px) {
+    .button-responsive {
+        flex-direction: column;
+    }
+    
 }
