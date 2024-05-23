@@ -1,6 +1,6 @@
 // The javascript
 
-// Fungsi pergantian/switch ke keliling atau luas
+// Fungsi switch/swap ke keliling atau luas
 let isKelilingVisible = false;
 function hideOrShow(){
     if (isKelilingVisible == false) {
