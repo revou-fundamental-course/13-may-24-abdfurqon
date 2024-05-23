@@ -6,6 +6,7 @@
     <title>Furqon Assignment Calculator</title>
     <link rel="stylesheet" href="css/style.css"
 </head>
+<!-- Ini body -->
 <body class="section-body">
     <header>
         <h1>Welcome to leCalc</h1>
@@ -24,10 +25,8 @@
             <h3>Segitiga</h3>
         </div>
 
-        <button type="button" id="switch-keliling" onclick="hideOrShow()"><u>Switch ke Keliling Segitiga</u></button>
-        <!-- <a href="keliling-section" id="switch-keliling"><u>Switch ke Keliling Segitiga</u></a> -->
-        <!-- <button href="keliling-section" id="switch-keliling"><u>Switch ke Keliling Segitiga</u></button> -->
-
+        <button type="button" id="switch-keliling" onclick="hideOrShow()">Switch ke Keliling Segitiga</button>
+        
         <section id="luas-section">
             <section>
                 <!-- Konten Atas Luas Segitiga -->
@@ -40,8 +39,13 @@
                 </div>
     
                 <p style="margin: 0;">Rumus Luas Segitiga yaitu : </p>
-                <p class="rumus-luas">L = 1/2 x a x t</p>
-                <p>Di mana:<br>L = Luas<br>a = Panjang Alas<br>t = Tinggi</p>
+                <p class="rumus-section">L = 1/2 x a x t</p>
+                <p>
+                    Di mana:<br>
+                    L = Luas<br>
+                    a = Panjang Alas<br>
+                    t = Tinggi
+                </p>
             </section>
             
             <!-- Pemisah Konten -->
@@ -49,8 +53,8 @@
 
             <!-- Konten Bawah Luas Segitiga -->
             <section>
-                <header style="text-align: center;">
-                    <h2 style="margin: 0px;">Hitung Luas Segitiga</h2>
+                <header class="hitung-section">
+                    <h2>Hitung Luas Segitiga</h2>
                 </header>
 
                 <form>
@@ -63,22 +67,29 @@
                             <label>Tinggi (<i>t</i>) : </label><input id="tinggi-input" type="number" />
                         </div>
                     </section>
-
-                    <p>L = 1/2 x a x t<br>
-                        L = 1/2 x "alas-input" x "tinggi-input"<br>
-                        L = "hasil"
-                    </p>
-
+                    <br>
+                    <!-- Ini Jawaban Luas -->
+                    <section>
+                        <div id="show-result" >
+                            <p>
+                                L = 1/2 x a x t<br>
+                                L = 1/2 x <span id="show-alas" style="display: inline; font-weight: bold;"></span> x <span id="show-tinggi" style="display: inline; font-weight: bold;"></span><br>
+                                L = <span id="show-hasil" style="display: inline; font-weight: bold;"></span>
+                            </p>
+                            <br>
+                        </div>
+                    </section>
+                    
                     <div class="button-responsive" style="display: flex">
-                        <button type="button" onclick="validation();">Hitung</button>
-                        <button type="button" id="reset-btn">Reset</button>
+                        <button type="button" id="hitung-btn" onclick="validation();">Hitung</button>
+                        <button type="reset" id="reset-btn" onclick="resetValue()">Reset</button>
                     </div>
-
+                    
                 </form>
             </section>
         </section>
 
-        <section id="keliling-section" display="none">
+        <section id="keliling-section">
             <section>
                 <!-- Konten Atas Keliling Segitiga -->
                 <div class="section-content">
@@ -89,7 +100,15 @@
                     <img src="assets/segitiga.jpg" width="150" height="150">
                 </div>
     
-                <p>Konten segitiga rumus dan lain-lain</p>
+                <p style="margin: 0;">Rumus Keliling Segitiga yaitu : </p>
+                <p class="rumus-section">K = S1 + S2 + S3</p>
+                <p>
+                    Di mana:<br>
+                    K = Keliling<br>
+                    S1 = Sisi A<br>
+                    S2 = Sisi B<br>
+                    S3 = Sisi C
+                </p>
             </section>
             
             <!-- Pemisah Konten -->
@@ -97,26 +116,43 @@
 
             <!-- Konten Bawah Keliling Segitiga -->
             <section>
-                <header>
+                <header class="hitung-section">
                     <h2>Hitung Keliling Segitiga</h2>
                 </header>
 
                 <form>
                     <section>
-                        <div>
-                            <label>Alas: </label><input/>
+                        <div style="padding-bottom: 6px;">
+                            <label>Sisi A :</label><input id="sisi-a" type="number" />
                         </div>
                         
+                        <div style="padding-bottom: 6px;">
+                            <label>Sisi B :</label><input id="sisi-b" type="number" />
+                        </div>
+
                         <div>
-                            <label>Tinggi </label><input/>
+                            <label>Sisi C :</label><input id="sisi-c" type="number" />
+                        </div>
+                    </section>
+                    <br>
+                    <!-- Ini Jawaban Keliling -->
+                    <section>
+                        <div id="show-result-keliling">
+                            <p>
+                                K = S1 + S2 + S3<br>
+                                K = 
+                                <span id="show-sisi-a" style="display: inline; font-weight: bold;"></span> + 
+                                <span id="show-sisi-b" style="display: inline; font-weight: bold;"></span> +
+                                <span id="show-sisi-c" style="display: inline; font-weight: bold;"></span><br>
+                                K = <span id="show-hasil-keliling" style="display: inline; font-weight: bold;"></span>
+                            </p>
+                            <br>
                         </div>
                     </section>
 
-                    <p>Diketahui: Lorem Ipsum</p>
-
                     <div class="button-responsive" style="display: flex">
-                        <button type="button" onclick="validation();">Hitung</button>
-                        <button type="button" id="reset-btn">Reset</button>
+                        <button type="button" onclick="hitungKeliling();">Hitung</button>
+                        <button type="reset" id="reset-keliling-btn" onclick="resetValueKeliling()">Reset</button>
                     </div>
                     
                 </form>
