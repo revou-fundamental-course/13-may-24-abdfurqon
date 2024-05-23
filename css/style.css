@@ -1,3 +1,4 @@
+/* The CSS */
 .section-body{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 15px;
@@ -42,6 +43,7 @@
     display: inline-block;
     transition-duration: 0.4s;
     cursor: pointer;
+    text-decoration: underline;
 }
 
 #switch-keliling:hover {
@@ -53,10 +55,19 @@
     text-align: center;
 }
 
-.rumus-luas{
+.rumus-section{
     text-align: center;
     font-weight: bold;
 }
+
+.hitung-section {
+    text-align: center;
+}
+
+.hitung-section>h2 {
+    margin: 0px;
+}
+
 
 input{
     background-color: aliceblue;
@@ -67,6 +78,22 @@ input{
     font-family: math;
 }
 
+#show-result{
+    display: none;
+}
+
+#show-result>p{
+    margin: 0;
+}
+
+#show-result-keliling{
+    display: none;
+}
+
+#show-result-keliling>p{
+    margin: 0;
+}
+
 form>button {
     padding: 15px;
     border-radius: 16px;
@@ -74,6 +101,14 @@ form>button {
     background-color: aliceblue;
     font-weight: bold;
     font-size: 15px;
+    cursor: pointer;
+    display: inline-block;
+    transition-duration: 0.4s;
+}
+
+form>button:hover {
+    background-color:steelblue;
+    color: white;
 }
 
 .button-responsive{
@@ -93,13 +128,37 @@ form>button {
     cursor: pointer;
 }
 
+.button-responsive>button:hover {
+    background-color:steelblue;
+    color: white;
+}
+
 #reset-btn {
     background-color:slateblue;
     color: white;
+}
+
+#reset-btn:hover {
+    background-color:steelblue;
+    color: red;
+}
+
+#reset-keliling-btn {
+    background-color:slateblue;
+    color: white;
+}
+
+#reset-keliling-btn:hover {
+    background-color:steelblue;
+    color: red;
 }
 
 @media only screen and (max-width: 480px) {
     .button-responsive {
         flex-direction: column;
     }
+}
+
+#keliling-section{
+    display: none
 }
