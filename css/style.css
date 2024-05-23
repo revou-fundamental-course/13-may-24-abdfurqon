@@ -1,13 +1,35 @@
+.section-body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+}
+
+.section-body>header{
+    text-align: center;
+}
+
+.section-body>header>h1{
+    margin: 6px;
+}
+
+.section-body>header>section>p{
+    margin: 10px;
+}
+
 .section-content{
     background-color: royalblue;
     color: white;
     padding-top: 8px;
     padding-bottom: 8px;
     text-align: center;
+    border-radius: 5px;
 }
 
 .section-content>h3{
     margin: 0;
+}
+
+.section-content>h2{
+    margin: 8px;
 }
 
 #switch-keliling{
@@ -17,33 +39,58 @@
     background-color: white;
     border: 0px;
     color:blue;
+    display: inline-block;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+#switch-keliling:hover {
+    background-color:cornflowerblue;
+    color: white;
 }
 
 .formula-img{
     text-align: center;
 }
 
+.rumus-luas{
+    text-align: center;
+    font-weight: bold;
+}
+
 input{
     background-color: aliceblue;
     border: 1px, solid, steelblue;
     border-radius: 4px;
-    width: 100%;
-    padding: 4px;
+    width: 98.5%;
+    padding: 6px;
     font-family: math;
 }
 
 form>button {
-    padding: 32px;
+    padding: 15px;
     border-radius: 16px;
     border: 1px, solid, steelblue;
     background-color: aliceblue;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.button-responsive{
+    justify-content: center;
+    padding-bottom: 20px;
 }
 
 .button-responsive>button {
-    padding: 32px;
+    padding: 15px;
     border-radius: 16px;
     border: 1px, solid, steelblue;
     background-color: aliceblue;
+    font-weight: bold;
+    font-size: 15px;
+    margin-right: 10px;
+    margin-bottom: 8px;
+    cursor: pointer;
 }
 
 #reset-btn {
@@ -55,5 +102,4 @@ form>button {
     .button-responsive {
         flex-direction: column;
     }
-    
 }
