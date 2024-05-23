@@ -1,22 +1,22 @@
 /* The CSS */
-.section-body{
+.section-body {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 15px;
 }
 
-.section-body>header{
+.section-body>header {
     text-align: center;
 }
 
-.section-body>header>h1{
+.section-body>header>h1 {
     margin: 6px;
 }
 
-.section-body>header>section>p{
+.section-body>header>section>p {
     margin: 10px;
 }
 
-.section-content{
+.section-content {
     background-color: royalblue;
     color: white;
     padding-top: 8px;
@@ -25,15 +25,15 @@
     border-radius: 5px;
 }
 
-.section-content>h3{
+.section-content>h3 {
     margin: 0;
 }
 
-.section-content>h2{
+.section-content>h2 {
     margin: 8px;
 }
 
-#switch-keliling{
+#switch-keliling {
     padding-top: 12px;
     padding-bottom: 12px;
     width: 100%;
@@ -51,11 +51,11 @@
     color: white;
 }
 
-.formula-img{
+.formula-img {
     text-align: center;
 }
 
-.rumus-section{
+.rumus-section {
     text-align: center;
     font-weight: bold;
 }
@@ -68,8 +68,7 @@
     margin: 0px;
 }
 
-
-input{
+input {
     background-color: aliceblue;
     border: 1px, solid, steelblue;
     border-radius: 4px;
@@ -78,19 +77,19 @@ input{
     font-family: math;
 }
 
-#show-result{
+#show-result {
     display: none;
 }
 
-#show-result>p{
+#show-result>p {
     margin: 0;
 }
 
-#show-result-keliling{
+#show-result-keliling {
     display: none;
 }
 
-#show-result-keliling>p{
+#show-result-keliling>p {
     margin: 0;
 }
 
@@ -111,7 +110,7 @@ form>button:hover {
     color: white;
 }
 
-.button-responsive{
+.button-responsive {
     justify-content: center;
     padding-bottom: 20px;
 }
@@ -159,6 +158,6 @@ form>button:hover {
     }
 }
 
-#keliling-section{
+#keliling-section {
     display: none
 }

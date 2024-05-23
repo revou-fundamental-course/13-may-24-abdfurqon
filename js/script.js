@@ -1,4 +1,6 @@
 // The javascript
+
+// Fungsi switch/swap ke keliling atau luas
 let isKelilingVisible = false;
 function hideOrShow(){
     if (isKelilingVisible == false) {
@@ -14,6 +16,7 @@ function hideOrShow(){
     }
 }
 
+// Fungsi perhitungan luas
 function validation() {
     let alasValue = document.getElementById("alas-input").value;
     let tinggiValue = document.getElementById("tinggi-input").value;
@@ -29,10 +32,12 @@ function validation() {
     }
 }
 
+// Reset luas
 function resetValue() {
     document.getElementById("show-result").style.display = "none";
 }
 
+// Fungsi perhitungan keliling
 function hitungKeliling() {
     let sisiAValue = document.getElementById("sisi-a").value;
     let sisiBValue = document.getElementById("sisi-b").value;
@@ -51,6 +56,7 @@ function hitungKeliling() {
     }
 }
 
+// Reset keliling
 function resetValueKeliling() {
     document.getElementById("show-result-keliling").style.display = "none";
 }
